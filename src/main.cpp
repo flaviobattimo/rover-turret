@@ -121,6 +121,8 @@ void otaInit(){
 
 void setup() {
 
+  WiFi.hostname("Rover-Turret");
+
   memset(currentWifiName,0,sizeof(currentWifiName));
   memset(currentWifiPassword,0,sizeof(currentWifiPassword));
   memset(currentServerIpAddress,0,sizeof(currentServerIpAddress));
@@ -143,8 +145,8 @@ void setup() {
   config.pin_pclk = PCLK_GPIO_NUM;
   config.pin_vsync = VSYNC_GPIO_NUM;
   config.pin_href = HREF_GPIO_NUM;
-  config.pin_sscb_sda = SIOD_GPIO_NUM;
-  config.pin_sscb_scl = SIOC_GPIO_NUM;
+  config.pin_sccb_sda = SIOD_GPIO_NUM;
+  config.pin_sccb_scl = SIOC_GPIO_NUM;
   config.pin_pwdn = PWDN_GPIO_NUM;
   config.pin_reset = RESET_GPIO_NUM;
   config.xclk_freq_hz = 20000000;

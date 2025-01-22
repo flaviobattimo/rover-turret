@@ -1,2 +1,3 @@
 #define WIFI_DEFAULT_STA_NAME "your local network"
 #define WIFI_DEFAULT_STA_PASSWORD "you local network password"
+#define UI_API_KEY "R0v3rcmd"
